@@ -1,24 +1,22 @@
 .App {
+  color: #35464b;
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  background: white;
+  color: white;
   height: 80px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  background: rgb(152, 185, 198);
+  color: #00202d;
+  height: 130px;
   padding: 20px;
-  color: white;
 }
 
 .App-intro {
   font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }
