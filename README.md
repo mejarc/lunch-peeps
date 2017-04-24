@@ -47,6 +47,7 @@ npm test
 * in Table component, increment Table number
 * persist the Lunchers data: localStorage? JSON?
 * complete Jest unit tests
+* screenshots of application in README
 * `yarn run eject` to remove development artifacts
 * add function to delete a Luncher
 
