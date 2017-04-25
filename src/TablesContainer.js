@@ -29,10 +29,11 @@ class TablesContainer extends React.Component {
     return this.state.lunchers;
   }
 
-  addLuncher() {
+  addLuncher(e) {
     // take form input value, and add string to lunchers array
-    const currentLunchers = this.getLunchers();
-    currentLunchers.push(this.luncherInput);
+    e.preventDefault();
+    let currentLunchers = this.getLunchers();
+    currentLunchers.push(this.refs.luncherInput.value);
     this.setState({ lunchers: currentLunchers });
   }
 
@@ -45,9 +46,9 @@ class TablesContainer extends React.Component {
         <button onClick={this.generateTables}>Generate your Lunch Peeps</button>
         <Table />
       {/* form to add new person to Lunchers array */}
-        <form onClick={ this.addLuncher }>
+        <form onSubmit={ this.addLuncher }>
           <label>Add a new luncher</label>
-          <input placeholder="Luncher name" ref={(val) => this.luncherInput = val } />
+          <input placeholder="Luncher name" ref="luncherInput" />
           <input type="submit" value="Add new luncher" />
         </form>
       </div>
